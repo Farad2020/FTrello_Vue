@@ -1,0 +1,20 @@
+body{
+    background-color: #EFF0EA;
+}
+
+.bg-gray{
+    background-color: #2B4F67;
+}
+
+.nav.navbar-nav.navbar-right li a {
+    color: white;
+}
+
+#nav a {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+#nav a.router-link-exact-active {
+    color: #42b983;
+}

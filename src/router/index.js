@@ -1,11 +1,35 @@
 import { createRouter, createWebHashHistory } from "vue-router";
-import Home from "../views/Home.vue";
+import CardDetailsComponent from "../components/CardDetailsComponent";
+import CardsComponent from "../components/CardsComponent";
+import RegisterComponent from "../components/RegisterComponent";
+import LoginComponent from "../components/LoginComponent";
+import ProfileComponent from "../components/ProfileComponent";
 
 const routes = [
   {
     path: "/",
     name: "Home",
-    component: Home
+    component: CardsComponent
+  },
+  {
+    path: "/cards/:id",
+    name: "CardDetail",
+    component: CardDetailsComponent
+  },
+  {
+    path: "/register",
+    name: "Register",
+    component: RegisterComponent
+  },
+  {
+    path: "/login",
+    name: "Login",
+    component: LoginComponent
+  },
+  {
+    path: "/profile",
+    name: "Profile",
+    component: ProfileComponent
   },
   {
     path: "/about",
